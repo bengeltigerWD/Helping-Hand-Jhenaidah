@@ -5,82 +5,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helping Hand Jhenaidah</title>
     <link rel="stylesheet" href="styles1.css">
-</head>
-<body>
-</head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Bar</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(to bottom, #020024, #094D92, #0F74A6);
+            color: #ffffff;
         }
+
         .navbar {
-            background-color: #86B380;
+            background-color: #004d40;
             overflow: hidden;
         }
+
         .navbar a {
-            float: left;color: red;
+            float: left;
             display: block;
-            color: #86B80;
+            color: #ffffff;
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
         }
+
         .navbar a:hover {
-            background-red: #ddd;
-            color: black;
+            background-color: #00695c;
+            color: #ffffff;
         }
+
+        header p {
+            font-size: 35px;
+            text-align: center;
+            line-height: 30px;
+            margin-bottom: 30px;
+            padding: 15px 35px;
+            color: white;
+        }
+
+        header input[type="text"] {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        .book {
+            text-align: center;
+            margin: 20px auto;
+            padding: 15px;
+            background: #ffffff20;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .book h2, .book p {
+            margin: 10px 0;
+        }
+
+        .book a {
+            display: inline-block;
+            text-decoration: none;
+            color: #ffffff;
+            background: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .book a:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background: #020024;
+        }
+
+        .bengal-tiger {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .bengal-tiger a {
+            text-decoration: none;
+        }
+
+        .be {
+            color: green;
+        }
+
+        .ng {
+            color: red;
+        }
+
+        .al {
+            color: green;
+        }
+
+        .tiger {
+            color: yellow;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer img {
+            margin-top: 10px;
+            max-width: 100px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            header p {
+                font-size: 28px;
+            }
+
+            .book {
+                width: 95%;
+                margin: 10px;
+            }
+
+            .navbar a {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            header input[type="text"] {
+                width: 90%;
+                font-size: 14px;
+            }
+
+            .bengal-tiger {
+                font-size: 18px;
+            }
+        }
+
     </style>
 </head>
 <body>
-
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="memberlist.html">Contact</a>
-       
     </div>
 
-
-</body>
-</html>
-    <header><p style="font-size:35px; text-align:center; line-height: 30px; margin-bottom: 30px;  padding: 15px 35px 15px 35px; color: white;">Helping Hand Jhenaidah</p>
-<div style="text-align:center; margin-top:20px;font-size:22px;">
-<div style="text-align:center;"><a style="font-size:22px;  padding: 15px 35px 15px 35px; color: blue;" href="https://www.facebook.com/profile.php?id=100083235735194">Facebook </a></div>
+    <header>
+        <p>Helping Hand Jhenaidah</p>
+        <div style="text-align:center;">
+            <a href="https://www.facebook.com/profile.php?id=100083235735194" style="font-size:22px; color: blue;">Facebook</a>
+        </div>
         <input type="text" id="search" placeholder="Search for here">
     </header>
+
     <main>
-        <div class="book" data-title="Donate Now In As Sunnah">
-            
+        <div class="book">
             <h2>Donate Now In As Sunnah Foundation</h2>
             <p>Author: As Sunnah Foundation</p>
-<a href="https://assunnahfoundation.org/donate/flood">Donate Now</a>
+            <a href="https://assunnahfoundation.org/donate/flood">Donate Now</a>
         </div>
-        <div class="book" data-title="Helping Hand Jhenaidah All Member List">
-            
+        <div class="book">
             <h2>Helping Hand Jhenaidah All Member List</h2>
             <p>Author: Helping Hand Jhenaidah</p>
-<a href="memberlist.html">know Here</a>
+            <a href="memberlist.html">Know Here</a>
         </div>
-        
- <div class="book" data-title="Everyday Donation List">
-          
+        <div class="book">
             <h2>Everyday Donation List</h2>
             <p>Author: Helping Hand Jhenaidah</p>
-<a href="everydaydonation.html">Click Here</a>
+            <a href="everydaydonation.html">Click Here</a>
         </div>
-<h2>আবূ হুরাইরাহ্ (রাঃ) থেকে বর্ণিতঃ তিনি বলেন, রসূলুল্লাহ (সাল্লাল্লাহু ‘আলাইহি ওয়া সাল্লাম) বলেছেনঃ যে ব্যক্তি কারো দুনিয়ার কোনো বিপদ দুর করবে, মহান আল্লাহ তাকে কিয়ামতের দিনের বিপদ থেকে রক্ষা করবেন।
-(তিরমিজি, হাদিস নং ২৯৪৫)</h2>
- <h2>Please Pray For Bangladesh Thanks Insaallah</h2>
+        <h2 style="text-align: center;">আবূ হুরাইরাহ্ (রাঃ) থেকে বর্ণিতঃ তিনি বলেন, রসূলুল্লাহ (সাল্লাল্লাহু ‘আলাইহি ওয়া সাল্লাম) বলেছেনঃ যে ব্যক্তি কারো দুনিয়ার কোনো বিপদ দূর করবে, মহান আল্লাহ তাকে কিয়ামতের দিনের বিপদ থেকে রক্ষা করবেন। (তিরমিজি, হাদিস নং ২৯৪৫)</h2>
+        <h2 style="text-align: center;">Please Pray For Bangladesh. Thanks, InshaAllah!</h2>
     </main>
-    <script src="script1.js"></script>
+
+    <footer>
+        <p class="bengal-tiger">
+            <a href="https://bengeltigerwd.github.io/Bengal-Tiger-Website-Development-LTD/">
+                <span class="be">Be</span><span class="ng">ng</span><span class="al">al</span>
+                <span class="tiger">Tiger</span> Web Development
+            </a>
+        </p>
+        <p>Site Developer: Ajmir Ahmed</p>
+        <img src="https://t.bkit.co/w_66d74a93ce0d9.gif" alt="Logo">
+    </footer>
 </body>
 </html>
-<p"color: gold;"> Site Developeing: BENGEL TIGER WEB DEVELOP TEAM </p>
-<p style="font-size:20px; text-align:center; line-height: 30px; margin-bottom: 50px;  padding: 15px 35px 15px 35px; color: blue;"> Site Developer : Ajmir Ahmed </p>
-<img src="https://t.bkit.co/w_66d74a93ce0d9.gif" />
