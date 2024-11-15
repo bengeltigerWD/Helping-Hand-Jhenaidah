@@ -4,7 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation List</title>
-    <link rel="stylesheet" href="styles1.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1F2833, #0B0C10);
+            color: #C5C6C7;
+        }
+
+        header {
+            background: #66FCF1;
+            color: #0B0C10;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #0B0C10;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 0 10px;
+            display: inline-block;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #66FCF1;
+            background: #0B0C10;
+            border: 2px solid #66FCF1;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .header-text {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header-text h1 {
+            font-size: 42px;
+            color: #66FCF1;
+            text-shadow: 2px 2px #0B0C10;
+        }
+
+        .header-text p {
+            font-size: 20px;
+            color: #C5C6C7;
+            margin-top: 10px;
+        }
+
+        .donation-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .donation {
+            background: #0B0C10;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .donation:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .donation h2 {
+            font-size: 24px;
+            color: #66FCF1;
+        }
+
+        .donation p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #C5C6C7;
+        }
+
+        .donation h3 {
+            font-size: 20px;
+            color: #45A29E;
+            margin-top: 15px;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer-text h2 {
+            font-size: 20px;
+            color: #66FCF1;
+            margin-bottom: 20px;
+        }
+
+        .footer-text p {
+            font-size: 16px;
+            color: #C5C6C7;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .donation-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .gif-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .gif-container img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #0B0C10;
+            color: #C5C6C7;
+            padding: 20px 10px;
+            text-align: center;
+            border-top: 2px solid #66FCF1;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #66FCF1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .bengal-tiger span {
+            font-weight: bold;
+        }
+
+        .be {
+            color: #00FF00;
+        }
+
+        .ng {
+            color:#FF0000;
+        }
+
+        .al {
+            color: #00FF00;
+        }
+
+        .tiger {
+            color:#FFFF00;
+        }
+
+        .footer-logo {
+            width: 50px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header-text h1 {
+                font-size: 32px;
+            }
+
+            .header-text p {
+                font-size: 18px;
+            }
+
+            .donation-info {
+                grid-template-columns: 1fr;
+            }
+
+            .donation h2 {
+                font-size: 20px;
+            }
+
+            .donation h3 {
+                font-size: 18px;
+            }
+
+            footer .bengal-tiger {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -57,7 +265,8 @@
             <img src="https://t.bkit.co/w_66d74a93ce0d9.gif" alt="Gif Image">
         </div>
     </main>
-      <footer>
+
+    <footer>
         <p class="bengal-tiger">
             <a href="https://bengeltigerwd.github.io/Bengal-Tiger-Website-Development-LTD/">
                 <span class="be">Be</span><span class="ng">ng</span><span class="al">al</span>
@@ -65,7 +274,7 @@
             </a>
         </p>
         <p>Site Developer: Ajmir Ahmed</p>
-        <img src="https://t.bkit.co/w_66d74a93ce0d9.gif" alt="Logo">
+        <img class="footer-logo" src="https://t.bkit.co/w_66d74a93ce0d9.gif" alt="Logo">
     </footer>
 </body>
 </html>
